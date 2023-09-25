@@ -15,8 +15,15 @@ public class StringReverse {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter A String: ");
         String str = sc.nextLine();
-        char [] ch = str.toCharArray();
-        int length = ch.length;
-        reverseString(ch,length);
+//        char [] ch = str.toCharArray();
+//        int length = ch.length;
+//        reverseString(ch,length);
+        int length = str.length();
+        String reverse = "";
+        for (int i = length - 1; i >= 0; i--){
+            reverse = reverse + str.charAt(i);
+        }
+        System.out.println(reverse);
+
     }
 }
